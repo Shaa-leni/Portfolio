@@ -1,4 +1,5 @@
 import './App.css';
+import Home from "../src/components/home/index"
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         <div>
           This is my profile
         </div>
+        <Home/>
     </div>
   );
 }
