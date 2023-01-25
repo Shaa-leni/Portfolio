@@ -4,6 +4,9 @@ function App() {
   return (
     <div className="App">
         Portfolio 
+        <div>
+          This is my profile
+        </div>
     </div>
   );
 }
