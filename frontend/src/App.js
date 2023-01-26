@@ -1,5 +1,6 @@
 import './App.css';
-import Home from "../src/components/home/index"
+import Home from "../src/components/home/index";
+import About from "./components/about/index"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           This is my profile
         </div>
         <Home/>
+        <About/>
     </div>
   );
 }
