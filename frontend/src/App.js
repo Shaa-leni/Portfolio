@@ -6,29 +6,23 @@ import Skills from "./components/skills/index";
 import Myworks from "./components/myworks/index";
 import Quotes from "./components/quotes/index";
 import Contact from "./components/contact/index";
-import axios from "axios";
-import { useEffect, useState } from 'react';
+
 
 function App() {
-
-  const [getter,setGetter] = useState([]);
-
-  useEffect(()=>{
-    axios.get("http://localhost:8000/get").then((response)=>{
-      setGetter(response.data);
-    })
-  },[])
-
-  console.log(getter);
   
   return (
     <>
+    <div>
+ 
+    {/* https://drive.google.com/uc?export=view&id=PPjZ4p75bkljk1GF3Nl1zsLm2CwedPxR_ */}
+
+    </div>
         <Intro />      
-        <About/>
-        <Skills/>
-        <Myworks/>
-        <Quotes/>
-        <Contact/>
+        <About />
+        <Skills />
+        <Myworks />
+        <Quotes />
+        <Contact />
         <Nav/>
 
     </>

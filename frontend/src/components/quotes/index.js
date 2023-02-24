@@ -3,9 +3,9 @@ import "./quotes.css";
 
 const Quotes = () => {
   return (
-    <div className='quotessec'>
+    <section className='quotessec'>
       Quotes
-    </div>
+    </section>
   )
 }
 

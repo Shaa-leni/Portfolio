@@ -20,9 +20,11 @@ mongoose.connect ("mongodb+srv://shaaleni:151299Sh@Portfolio.8abnban.mongodb.net
 
 //SCHEMA
 const mySchema = {
+    id:Number,
     name:String,
     designation:String,
-    id:Number
+    pdfLink:String,
+    img:String
 }
 
 const monmodel = mongoose.model("profile",mySchema);
@@ -33,9 +35,12 @@ app.post("/add",async(req,res)=>{
     console.log("inside post");
 
     const data = new monmodel ({
+        id:req.body.id,
         name:req.body.name,
         designation:req.body.designation,
-        id:req.body.id
+        pdfLink:req.body.pdfLink,
+        img:req.body.img,
+
 
     })
 
@@ -45,15 +50,15 @@ app.post("/add",async(req,res)=>{
 
 //fetch by id
 app.get("/get/:id",function(req,res){
-          getid=req.params.id
+          let getid=req.params.id;
           monmodel.find(({id:getid}),function(err,val){
             if(err){
                 res.send("err");
             }
             else{
-                if(val.length==0)
+                if(val.length==0)//[]
                 {
-                    console.log("data doesn't exist");
+                    res.send("data doesn't exist");
                 }
                 else{
                     res.send(val);
@@ -65,7 +70,7 @@ app.get("/get/:id",function(req,res){
 
 //FETCH ALL
 
-app.get("/get",(req,res)=>{
+app.get("/myData",(req,res)=>{
     monmodel.find((err,val)=>{
         if(err){
             console.log("err in getting the data");
