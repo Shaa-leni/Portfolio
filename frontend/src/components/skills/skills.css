@@ -1,3 +1,94 @@
-.skillssec{
-    height:25rem;
+  
+    .skills_container{
+        display:grid;
+        grid-template-columns: 40% 40%;
+        gap:20%;
+        text-align: center;
+    }
+
+    /* .skill_left{
+        position: relative;
+    } */
+
+    .frontDiv{
+      
+        padding:10px;
+        margin:10px;
+        border-radius:1rem;
+        display:flex;
+        color:black;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        /* background:white; */
+        background: #BE93C5;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+
+
+
+    .frontDiv:hover{
+        letter-spacing: 0.2rem;
+        box-shadow: 0 0 35px #BE93C5;
+        background: transparent;
+
+         /* fallback for old browsers */ 
+                
+    }
+
+    .skill-image:hover{
+        rotate:40deg;
+    }
+
+
+
+  
+
+    .skill-image{
+        width:35%;  
+    }
+
+    .skill_left {
+        border:1px solid black;
+        border-radius: 1rem;
+        display:grid;
+        grid-template-columns:40% 40%;
+        gap:1rem;
+        justify-content: center;    
+        padding:3rem 0;
+    }
+    
+    .skill_right{
+        border:1px solid black;
+        border-radius: 1rem;
+        display:grid;
+        grid-template-columns:40% ;
+        grid-template-rows: 20% 20% 20% ;
+        gap:2rem;
+        justify-content: center;    
+        padding:3rem 0;
+
+    }
+
+  /* MD*/
+@media screen and (max-width: 1024px) {
+    .skills_container{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:5%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills_container{
+
+        display:grid;
+        grid-template-columns:1fr;
+        gap:5%;
+        text-align: center;
+    }
 }
