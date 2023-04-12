@@ -1,3 +1,86 @@
-.myworkssec{
-    height:25rem;
+
+
+/* .container,.project_container{
+  padding-bottom: 4rem; 
+  gap:5rem;
+} */
+
+.project_container.project_item{
+    display:flex;
+    justify-content: space-around;
+}
+
+.project_item{
+    /* background:lightgray; */
+
+
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    /* padding:1rem 0 1rem 0; */
+    /* border-radius: 2rem; */
+    border:1px solid transparent;
+    transition:var(--transition);
+    /* margin-right: 5rem; */
+    /* margin: 0 5rem; */
+    
+}
+
+.slick-track{
+    display: flex !important;
+}
+.slick-slide {
+    margin-right: 3rem;
+}
+
+
+.project_item:hover{
+    background: #834d9b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d04ed6, #834d9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.project_item-i{
+    /* border-radius: 1rem; */
+    overflow:hidden;
+    width:100%;
+}
+
+.project_item-image{
+    width:100%;
+}
+.project_item h3{
+    margin:1.2rem 0 2rem;
+}
+
+.project_item-cta{
+    position:relative;
+    bottom:1.5rem
+}
+.output_icon{
+    position: absolute;
+    right:5rem
+}
+.git_icon{
+    position:relative;
+    left:5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container.project_container{
+        display:grid;
+        /* grid-template-columns: 50% 50%; */
+        width:100%;
+        padding-bottom: 3rem;
+          /* gap:5rem; */
+      }
+}
+
+@media screen and (max-width: 600px) {
+    .container.project_container{
+        width:100%;
+        padding-bottom: 2rem;
+          /* gap:5rem; */
+      }
 }

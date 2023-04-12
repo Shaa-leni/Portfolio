@@ -1,11 +1,30 @@
-/* .img{
-    position:relative;
-    
-} */
 
+/* .shaaleni{
+    content:"code by Shaaleni"
+} */
+.mainItem,.shaaleni,.toggleBtn{
+    display: inline;
+}
+.shaaleni::after{
+    content:"Code by Shaaleni";
+}
+.shaaleni:hover::after{
+    content:"Fullstack Developer"
+}
+.toggleBtn{
+    float:right;
+    margin-top: 0.5rem;
+    width:4rem;
+    height:2rem;
+    background:white;
+    border-radius: 2rem;
+    border:1px solid black;
+    display:flex;
+}
 .intro_img{
     position:relative;
 }
+
 
 .hello{
     text-indent: 25px;
@@ -23,15 +42,48 @@
 
 .intro_socials{
     display:flex;
+    font-size: 1.5rem;
     flex-direction: column;
     gap:0.8rem;
     position:absolute;
-    bottom:3rem;
+    bottom:10rem;
+    color:black;
 }
 
 .intro_socials::after{
     content:"";
-    width:1px;
+    width:2px;
     height:2rem;
     background:black;
+    color:black;
+
 }
+
+.scroll_sec img{
+ width:1.5%;
+ position:absolute;
+ bottom:12rem;
+ /* top:45%; */
+ right : 12.8%;
+ 
+}
+
+.intro_container .scroll_down{
+    top:45%;
+    position:absolute;
+    right : 8.3%;
+    transform: rotate(-90deg);
+}
+
+.intro_btns{
+    position:absolute;
+    top:106%;
+    right:35%;
+
+}
+
+.btn{
+    margin:2rem;
+}
+
+

@@ -5,13 +5,14 @@ nav{
     padding:0.6rem 1.7rem;
     position:fixed;
     border-radius: 3rem;
-    z-index: 2;
+    z-index:5;
     left:50%;
     transform:translateX(-50%);
     bottom:2rem;
     display:flex;
     gap:0.8rem;
     backdrop-filter:blur(15px);
+    height:2.7rem
 }
 
 nav a{

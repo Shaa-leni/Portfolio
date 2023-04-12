@@ -1,3 +1,50 @@
-.quotessec{
-    height:25rem;
+.container.quotes_container{
+    width:40%;
 }
+.quote_avatar{
+    width:4rem;
+    aspect-ratio: 1/1;
+    overflow:hidden;
+    border-radius:50%;
+    margin:0 auto 1rem;
+    border:0.4rem solid var(--color-primary-variant);
+}
+
+.quotes_item{
+ background: #BE93C5;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ text-align: center;
+ padding:2rem 0 2rem 0;
+ border-radius:2rem;
+ user-select:none;
+ gap:10rem;
+}
+
+.quote{
+    color:black;
+    font-weight: 500;
+    display:block;
+    width: 80%;
+    margin:0.8rem auto 0;
+}
+
+/* MD */
+
+@media screen and (max-width: 1024px) {
+    .container.quotes_container{
+        width:60%;
+    }
+    
+}
+
+/* SM*/
+
+@media screen and (max-width: 600px) {
+    .container.quotes_container{
+        width:var(--container-width-sm);
+    }
+  
+}
+

@@ -1,11 +1,9 @@
-/* .contactsec{
-    height:50rem;
-} */
+
 
 .container.contact_container{
     width:58%;
     display:grid;
-    grid-template-columns: 35% 58%;
+    grid-template-columns: 35% 58% ;
     gap:12%;
 }
 
@@ -16,7 +14,9 @@
 }
 
 .contact_option{
-    background:rgb(193, 193, 202);
+    background: #BE93C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding:1.2rem;
     border-radius: 1.2rem;
     text-align:center;
@@ -44,16 +44,33 @@
 form{
     display:flex;
     flex-direction:column;
-    gap:1.2rem
+    gap:1.2rem;
+    width:100%;
+
 }
 
 input,textarea {
-    width:100%;
     padding:1.5rem;
     border-radius:0.5rem;
     background:transparent;
     border:2px solid black;
     resize:none;
+}
+
+/*===========MEDIA QUERIES (MD)=========*/
+@media screen and (max-width: 1024px){
+    .container.contact_container{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+}
+
+/*===========MEDIA QUERIES (SM)=========*/
+@media screen and (max-width: 600px){
+    .container.contact_container{
+        width:var(--container-width-sm);
+     
+    }
 }
 
 
